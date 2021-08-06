@@ -11,10 +11,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Hello World
-        run: |
-        echo Hello, world!
-        ${{ secrets.EMAIL_USERNAME }}
-        ${{ secrets.EMAIL_PASSWORD }}
+        run: echo Hello, world!
 
       - name: Send mail
         if: always()
